@@ -1,7 +1,7 @@
 if SHIELD_MDACTYL_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Marco's Keyboard"
+    default "KB L"
 
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
@@ -12,7 +12,7 @@ endif
 if SHIELD_MDACTYL_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "Marco's Keyboard R"
+    default "KB R"
 
 endif
 
