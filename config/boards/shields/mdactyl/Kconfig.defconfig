@@ -1,7 +1,7 @@
 if SHIELD_MDACTYL_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "MKBL"
+    default "MKBLL"
 
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
@@ -16,7 +16,7 @@ config ZMK_KEYBOARD_NAME
 
 endif
 
-if SHIELD_MY_BOARD_LEFT || SHIELD_MY_BOARD_RIGHT
+if SHIELD_MDACTYL_LEFT || SHIELD_MDACTYL_RIGHT
 
 config ZMK_SPLIT
     default y
