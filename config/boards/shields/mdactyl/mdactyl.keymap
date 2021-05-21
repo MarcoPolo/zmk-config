@@ -33,7 +33,7 @@
     &kp TAB     &kp Q       &kp W       &kp E       &kp R    &kp T    &kp LALT          &kp LALT  &kp Y       &kp U     &kp I     &kp O      &kp P    &kp MINUS
     &kp ESC     &kp A       &kp S       &kp D       &kp F    &kp G    &kp F             &kp F     &kp H       &kp J     &kp K     &kp L      &kp SEMI &kp SQT  
     &kp LSHFT   &kp Z       &kp X       &kp C       &kp V    &kp B    &kp LGUI          &kp LGUI  &kp N       &kp M     &kp COMMA &kp DOT    &kp FSLH &kp RSHFT
-    &bootloader &bt BT_PRV  &bt BT_NXT  &kp LEFT    &kp RIGHT &kp BKSP &kp LCTRL         &kp RET   &lt NUM SPC &kp DARW  &kp UARW  &kp LBKT   &kp RBKT &kp F
+    &bootloader &kp GRAVE   &kp BSLH    &kp LEFT    &kp RIGHT &kp BKSP &kp LCTRL         &kp RET   &lt NUM SPC &kp DARW  &kp UARW  &kp LBKT   &kp RBKT &kp F
           >;
         };
 
