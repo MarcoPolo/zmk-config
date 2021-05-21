@@ -1,13 +1,13 @@
 #include "mdactyl.dtsi" // Notice that the main dtsi files are included in the overlay.
 
-&default_transform { // The matrix transform for this board is 6 columns over because the left half is 6 columns wide according to the matrix.
-    col-offset = <6>;
+&default_transform { // The matrix transform for this board is 7 columns over because the left half is 7 columns wide according to the matrix.
+    col-offset = <7>;
 };
 
 &kscan0 {
     col-gpios
-        = <&pro_micro_a 6 GPIO_ACTIVE_HIGH> // col7 in the schematic
-        , <&pro_micro_a 7 GPIO_ACTIVE_HIGH> // col8 in the schematic
+        = <&pro_micro_d 6 GPIO_ACTIVE_HIGH> // col7 in the schematic
+        , <&pro_micro_d 7 GPIO_ACTIVE_HIGH> // col8 in the schematic
         , <&pro_micro_d 8 GPIO_ACTIVE_HIGH> // col9 in the schematic
         , <&pro_micro_d 9 GPIO_ACTIVE_HIGH> // col10 in the schematic
         , <&pro_micro_d 10 GPIO_ACTIVE_HIGH> // col11 in the schematic
