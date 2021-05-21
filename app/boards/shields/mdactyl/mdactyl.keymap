@@ -1,0 +1,36 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+//
+// ,-----------------------------------------.                    ,-----------------------------------------.
+// | Del  |   Q  |   W  |   E  |   R  |   T  |                    |   Y  |   U  |   I  |   O  |   P  |  \   |
+// |------+------+------+------+------+------|                    |------+------+------+------+------+------|
+// | BkSp |   A  |   S  |   D  |   F  |   G  |                    |   H  |   J  |   K  |   L  |; / L2|'/Cmd |
+// |------+------+------+------+------+------|                    |------+------+------+------+------+------|
+// |LShift|Z/Ctrl|   X  |   C  |   V  |  2,5 |                    |   N  |   M  |   ,  |   .  |//Ctrl|RShift|
+// |------+------+------+------+------+------'                    `------+------+------+------+------+------|
+// |Grv/L1|  '"  |AltShf| Left | Right|                                  |  Up  | Down |   [  |   ]  | ~L1  |
+// `----------------------------------'                                  `----------------------------------'
+//                                      ,-------------.  ,-------------.
+//                                      | cmd  | opt  |  | Alt  | ^/Esc|
+//                               ,------|------|------|  |------+------+------.
+//                               |      |      |      |  |      |      |      |
+//                               |      |      |      |  |      |  Tab |Enter |
+//                               |back  | ctrl | F    |  | PgDn |      |      |
+//                               `--------------------'  `--------------------'
+//
+          bindings = <
+    &kp TAB    &kp Q       &kp W       &kp E       &kp R  &kp T   &kp LALT        &kp LALT  &kp Y  &kp U  &kp I     &kp O   &kp P    &kp MINUS
+    &kp ESC    &kp A       &kp S       &kp D       &kp F  &kp G   &kp F           &kp F     &kp H  &kp J  &kp K     &kp L   &kp SEMI &kp SQT  
+    &kp LSHFT  &kp Z       &kp X       &kp C       &kp V  &kp B   &kp LGUI        &kp LGUI  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+    &bt BT_CLR &bt BT_PRV  &bt BT_NXT  &bootloader &reset &kp RET &kp LCTRL       &kp LCTRL &kp N  &kp M  &kp COMMA &kp DOT &reset   &bootloader
+          >;
+        };
+    };
+};
