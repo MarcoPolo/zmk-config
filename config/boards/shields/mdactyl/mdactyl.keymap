@@ -4,6 +4,7 @@
 #define DEFAULT 0
 #define NUM     1
 #define KEYPAD  2
+#define PROG    3
 
 &mt {
     quick_tap_ms = <300>;
@@ -78,21 +79,28 @@
 //
           bindings = <
     &kp EQUAL   &kp N1      &kp N2      &kp N3      &kp N4    &kp N5   &kp LALT          &reset    &kp N6      &kp N7    &kp N8    &kp N9     &kp N0   &kp MINUS
-    &kp ESC     &kp A       &kp S       &kp LPAR    &kp RPAR  &kp G    &kp F             &kp F     &kp LEFT    &kp DARW  &kp UARW  &kp RIGHT  &kp SEMI &kp SQT  
+    &kp ESC     &kp A       &kp S       &kp LPAR    &kp RPAR  &kp G    &kp F             &kp F     &kp LEFT    &kp DARW  &kp UARW  &kp RIGHT  &kp SEMI &kp SQT
     &kp LSHFT   &kp Z       &kp X       &kp C       &kp V     &kp B    &kp LGUI          &kp LGUI  &kp N       &kp M     &kp COMMA &kp DOT    &kp FSLH &kp RSHFT
-    &bootloader &bt BT_PRV  &bt BT_NXT  &reset      &reset    &kp BKSP &kp LCTRL         &kp RET   &hp NUM SPC &kp DARW  &kp MINUS &kp LBKT   &kp RBKT &bt BT_CLR
+    &trans      &trans      &trans      &trans      &trans    &kp BKSP &kp LCTRL         &kp RET   &hp NUM SPC &kp DARW  &kp MINUS &kp LBKT   &kp RBKT &mo PROG
           >;
         };
 
     keypad_layer {
                   bindings = <
     &kp EQUAL   &kp N1      &kp N2      &kp N3      &kp N4    &kp N5   &kp LALT          &reset     &kp N6      &kp N7    &kp N8    &kp N9     &kp N0   &kp MINUS
-    &kp ESC     &kp A       &kp S       &kp LPAR    &kp RPAR  &kp G    &kp F             &mo KEYPAD &kp KP_N4   &kp KP_N2 &kp KP_N8  &kp KP_N6  &kp SEMI &kp SQT  
+    &kp ESC     &kp A       &kp S       &kp LPAR    &kp RPAR  &kp G    &kp F             &mo KEYPAD &kp KP_N4   &kp KP_N2 &kp KP_N8  &kp KP_N6  &kp SEMI &kp SQT
     &kp LSHFT   &kp Z       &kp X       &kp KP_N3   &kp KP_N1     &kp B    &kp LGUI          &kp LGUI   &kp N       &kp M     &kp COMMA &kp DOT    &kp FSLH &kp RSHFT
-    &bootloader &bt BT_PRV  &bt BT_NXT  &reset      &reset    &kp BKSP &kp LCTRL         &kp RET    &hp NUM SPC &kp DARW  &kp MINUS &kp LBKT   &kp RBKT &bt BT_CLR
+    &trans &trans  &trans  &trans      &reset    &kp BKSP &kp LCTRL         &kp RET    &hp NUM SPC &kp DARW  &kp MINUS &kp LBKT   &kp RBKT &trans
           >;
         };
 
-
+    program_layer {
+                  bindings = <
+    &kp EQUAL   &kp N1      &kp N2      &kp N3      &kp N4    &kp N5   &kp LALT          &reset     &kp N6      &kp N7    &kp N8    &kp N9     &kp N0   &kp MINUS
+    &kp ESC     &kp A       &kp S       &kp LPAR    &kp RPAR  &kp G    &kp F             &mo KEYPAD &kp KP_N4   &kp KP_N2 &kp KP_N8  &kp KP_N6  &kp SEMI &kp SQT
+    &kp LSHFT   &kp Z       &kp X       &kp KP_N3   &kp KP_N1     &kp B    &kp LGUI          &kp LGUI   &kp N       &kp M     &kp COMMA &kp DOT    &kp FSLH &kp RSHFT
+    &bootloader &bt BT_PRV  &bt BT_NXT  &reset      &bt BT_CLR      &kp BKSP &kp LCTRL         &kp RET    &hp NUM SPC &kp DARW  &kp MINUS &kp LBKT   &kp RBKT &bt BT_CLR
+          >;
+        };
     };
 };
